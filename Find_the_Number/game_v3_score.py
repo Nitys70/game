@@ -41,7 +41,8 @@ def game_core_v2(number: int = 1) -> int:
 
             if predict > number:
                 
-                if count == 9:
+                # Условие останова рекурсии
+                if count == 9:     
                     return predict  
                 
                 count += 1
